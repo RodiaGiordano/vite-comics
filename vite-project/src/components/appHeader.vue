@@ -1,7 +1,58 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      listLinks: [
+        {
+          linkText: "CHARACTER",
+          active: false,
+        },
+        {
+          linkText: "COMICS",
+          active: false,
+        },
+
+        {
+          linkText: "MOVIES",
+          active: false,
+        },
+
+        {
+          linkText: "TV",
+          active: false,
+        },
+
+        {
+          linkText: "GAMES",
+          active: false,
+        },
+
+        {
+          linkText: "COLLECTIBLES",
+          active: false,
+        },
+
+        {
+          linkText: "VIDEOS",
+          active: false,
+        },
+
+        {
+          linkText: "FANS",
+          active: false,
+        },
+
+        {
+          linkText: "NEWS",
+          active: false,
+        },
+
+        {
+          linkText: "SHOP",
+          active: true,
+        },
+      ],
+    };
   },
 };
 </script>
@@ -11,16 +62,12 @@ export default {
     <div class="header_wrapper">
       <img src="/vue-dc-comics-1/img/dc-logo.png" alt="" />
       <ul>
-        <li>CHARACTER</li>
-        <li>COMICS</li>
-        <li>MOVIES</li>
-        <li>TV</li>
-        <li>GAMES</li>
-        <li>COLLECTIBLES</li>
-        <li>VIDEOS</li>
-        <li>FANS</li>
-        <li>NEWS</li>
-        <li>SHOP</li>
+        <li
+          v-for="(link, index) in listLinks"
+          :class="link.active ? 'active' : ''"
+        >
+          {{ link.linkText }}
+        </li>
       </ul>
     </div>
   </main>
