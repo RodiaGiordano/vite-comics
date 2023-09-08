@@ -13,6 +13,7 @@ export default {
 <template>
   <div class="container">
     <appHeader />
+    <appMain />
   </div>
 </template>
 
@@ -24,7 +25,6 @@ export default {
 }
 
 .container {
-  padding: 30px 150px;
   font-family: Arial, Helvetica, sans-serif;
 }
 </style>

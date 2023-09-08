@@ -58,7 +58,7 @@ export default {
 </script>
 
 <template>
-  <main>
+  <header>
     <div class="header_wrapper">
       <img src="/vue-dc-comics-1/img/dc-logo.png" alt="" />
       <ul>
@@ -70,11 +70,11 @@ export default {
         </li>
       </ul>
     </div>
-  </main>
+  </header>
 </template>
 
 <style lang="scss" scoped>
-main {
+header {
   font-weight: bold;
   font-size: 0.6rem;
   img {
@@ -82,6 +82,8 @@ main {
   }
 
   .header_wrapper {
+    width: 75%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
