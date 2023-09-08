@@ -88,6 +88,8 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    padding: 30px 0;
+
     ul {
       list-style-type: none;
       display: flex;
