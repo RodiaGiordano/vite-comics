@@ -17,7 +17,8 @@ main {
   background-color: #1c1c1c;
 }
 .main_wrapper {
-  height: 200px;
+  padding: 50px 0;
+
   width: 75%;
   margin: auto;
   color: white;

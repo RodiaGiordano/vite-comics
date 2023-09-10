@@ -28,4 +28,8 @@ export default {
 .container {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+footer {
+  height: 900px;
+}
 </style>

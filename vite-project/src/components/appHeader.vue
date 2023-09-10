@@ -9,7 +9,7 @@ export default {
         },
         {
           linkText: "COMICS",
-          active: false,
+          active: true,
         },
 
         {
@@ -49,7 +49,7 @@ export default {
 
         {
           linkText: "SHOP",
-          active: true,
+          active: false,
         },
       ],
     };
@@ -76,10 +76,6 @@ export default {
 <style lang="scss" scoped>
 header {
   font-weight: bold;
-  font-size: 0.6rem;
-  img {
-    width: 80px;
-  }
 
   .header_wrapper {
     width: 75%;
@@ -88,12 +84,17 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    padding: 30px 0;
+    padding: 20px 0;
 
     ul {
       list-style-type: none;
       display: flex;
       gap: 30px;
+
+      .active {
+        color: #0282f9;
+        box-shadow: #0282f9 0px 68px 0px -7px;
+      }
     }
   }
 }
