@@ -100,8 +100,9 @@ export default {
       <img src="../../public/vue-dc-comics-1/img/jumbotron.jpg" alt="" />
     </div>
     <div class="main_wrapper">
+      <span class="label_series">CURRENT SERIES</span>
       <appCard v-for="card in dcComicsPic" :card="card" />
-      <div class="load_more">LOAD MORE</div>
+      <span class="load_more">LOAD MORE</span>
     </div>
   </main>
 </template>
@@ -120,6 +121,8 @@ main {
     }
   }
   .main_wrapper {
+    position: relative;
+
     padding: 50px 0 20px;
 
     width: 75%;
@@ -130,8 +133,15 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     font-size: 1.5rem;
+
+    .label_series {
+      position: absolute;
+      top: -17px;
+      left: -20px;
+    }
   }
-  .load_more {
+  .load_more,
+  .label_series {
     font-size: 0.8rem;
     font-weight: bold;
 
