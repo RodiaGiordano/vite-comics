@@ -8,24 +8,36 @@ export default {
 
 <template>
   <main>
-    <div class="main_wrapper">CONTENT goes here...</div>
+    <div class="jumbo">
+      <img src="../../public/vue-dc-comics-1/img/jumbotron.jpg" alt="" />
+    </div>
+    <div class="main_wrapper"></div>
   </main>
 </template>
 
 <style lang="scss" scoped>
 main {
-  background-color: #1c1c1c;
-}
-.main_wrapper {
-  padding: 50px 0;
+  .jumbo {
+    height: 400px;
 
-  width: 75%;
-  margin: auto;
-  color: white;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 0% 0%;
+    }
+  }
+  .main_wrapper {
+    padding: 50px 0;
 
-  display: flex;
-  align-items: center;
+    width: 75%;
+    margin: auto;
+    color: white;
 
-  font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+  }
 }
 </style>
