@@ -80,10 +80,12 @@ export default {
 <template>
   <footer>
     <div class="footer_top">
-      <div v-for="(card, index) in cards" class="card">
-        <img :src="'../../public/vue-dc-comics-1/img/' + card.pic" alt="" />
-        <span>{{ card.pic_text }}</span>
-      </div>
+      <section>
+        <div v-for="(card, index) in cards" class="card">
+          <img :src="'../../public/vue-dc-comics-1/img/' + card.pic" alt="" />
+          <span>{{ card.pic_text }}</span>
+        </div>
+      </section>
     </div>
 
     <div class="footer_middle">
@@ -157,20 +159,27 @@ footer > * {
 
 .footer_top {
   background-color: #0282f9;
-  height: calc(100% / 5);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
+  section {
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
 
   .card {
+    width: calc(100% / 5 - 10px);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    font-size: 0.5rem;
 
     img {
-      width: 50px;
+      width: 40px;
       aspect-ratio: 1;
 
       object-fit: contain;
